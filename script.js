@@ -33,12 +33,20 @@ let currentUserName= "name of the person visiting the website right now"
 // counterLearn()
 // alert(counter);
 
-const clickable = document.querySelector("button");
+// const clickable = document.querySelector("button");
 
-function clickToSee() { 
-    const name = prompt('what is your name?');
-    const message = document.querySelector("#paragraph");
-    message.innerHTML=`Hello, ${name} nice to meet you`;
+// function clickToSee() { 
+//     const name = prompt('what is your name?');
+//     const message = document.querySelector("#paragraph");
+//     message.innerHTML=`Hello, ${name} nice to meet you`;
+// }
+
+// clickable.addEventListener('click', clickToSee);
+
+let cheese = "Cheddar";
+
+if (cheese) {
+  console.log("Yay! Cheese available for making cheese on toast.");
+} else {
+  console.log("No cheese on toast for you today.");
 }
-
-clickable.addEventListener('click', clickToSee);
