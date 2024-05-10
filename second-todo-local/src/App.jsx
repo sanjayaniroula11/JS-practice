@@ -9,6 +9,8 @@ function App() {
 
   const addTodo = (todo) => {
     setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev]);
+    console.log(prev.id);
+    setTodos('')
   };
   const updateTodo = (id, todo) => {
     setTodos((prev) =>
@@ -38,6 +40,10 @@ function App() {
 
   // <--------------------------------------functionality finisehd ----------------->
 
+
+// localStorage
+
+
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("todos"));
 
@@ -58,10 +64,10 @@ function App() {
     <TodoProvider
       value={{ todos, addTodo, updateTodo, deleteTodo, toggleComplete }}
     >
-      <div className="bg-[#172842] min-h-screen py-8">
-        <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
+      <div className="bg-[#293710] min-h-screen py-8">
+        <div className="w-full max-w-xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
           <h1 className="text-2xl font-bold text-center mb-8 mt-2">
-            Manage Your Todos
+            Manage Your Tasks Here
           </h1>
           <div className="mb-4">
             <TodoForm/>
