@@ -9,8 +9,7 @@ function App() {
 
   const addTodo = (todo) => {
     setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev]);
-    console.log(prev.id);
-    setTodos('')
+    
   };
   const updateTodo = (id, todo) => {
     setTodos((prev) =>
