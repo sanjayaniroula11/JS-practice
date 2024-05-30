@@ -15,29 +15,34 @@
   align-items: center;
   justify-content: center;
   background-color: black;
-  color: white  ;
   height: 100vh;
   text-align: center;
 }
 .todo h1{
   font-size: 2.5rem;
+  color: #ffff00;
+  background-color: black;
+  margin-top: 30px;
+  
 }
 
 .todo-main{
-  color: white;
-  background-color: red;
-  padding: 50px;
+  background-color: #ffff00;
+  padding: 0 0 30px 0;
   border-radius: 16px;
+  width: 350px;
 }
 .todo-main #addTask{
   background: none;
   border: none;
-  border-bottom: 2px solid white;
-  width: 90%;
+  border-bottom: 1.5px solid black;
+  color: black;
+  text-align: center;
+  width: 80%;
   height: 40px;
   margin-top: 20px;
   padding: 10px;
-  font-size: 28px;
+  font-size: 20px;
   
 }
 .submit{
@@ -45,13 +50,13 @@
   height: 40px;
   border-radius: 50%;
   font-weight: bold;
-  background: white;
+  background: black;
+  color: #ffff00;
   border: none;
 }
 #new-task{
-  border: 1px solid black;
   margin-top: 30px;
-  width: 50%;
+  width: 100%;
   height: 35px;
   font-size: 20px;
   padding: 5px;
@@ -61,21 +66,29 @@
 .all-tasks ul{
   width: 70%;
   text-align: left;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .all-tasks ul li{
+  width: 100%;
   padding: 0 20px;
-  font-size: 25px;
+  margin: 10px 0;
+  font-size: 20px;
   display: flex;
   gap: 20px;
+  color: black;
   align-items: center;
+  text-transform: capitalize;
 }
 
 .delete{
-  height: 25px;
-  width: 25px;
+
   background: none;
-  font-size: 25px;
+  cursor: pointer;
+  font-size: inherit;
   border-radius: 50%;
   border: none;
+}
+
+.delete:hover{
+  background-color: black;
 }
