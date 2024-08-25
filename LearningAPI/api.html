@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #212121;">
+    
+    <div class="card">
+        <div class="photo">
+            <img src="" alt="" class="avatar">
+        </div>
+        <div class="name">
+            <div class="myname"><p id="name">Name: </p></div>
+            <div class="followers"><p id="followers">followers: </p></div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        const requestUrl = 'https://api.github.com/users/sanjayaniroula11'
+         const xhr = new XMLHttpRequest();
+         xhr.open('GET', requestUrl);
+         xhr.onreadystatechange = function(){
+
+            
+
+            console.log(xhr.readyState);
+            if(xhr.readyState === 4){
+                const data = JSON.parse(this.responseText);
+                console.log(typeof data)
+                console.log(data.followers + 5)
+                document.querySelector('#name').innerHTML=`<b>Name: </> ${data.name}`;
+                document.querySelector('#followers').innerHTML=`<b>Followers: </> ${data.followers}`;
+                document.querySelector('.avatar').src = data.avatar_url;
+            }
+         }
+         xhr.send()
+
+         
+    </script>
+</body>
+</html>
