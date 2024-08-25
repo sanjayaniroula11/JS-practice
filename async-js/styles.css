@@ -1,0 +1,90 @@
+/* *{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'comfortaa', sans-serif;
+    background-color: aliceblue;
+}
+section{
+    width: 80%;
+    margin: auto;
+}
+.logo{
+    text-align: center;
+}
+nav{
+    
+    padding: 30px;
+    background-color: aquamarine; 
+    display: flex;
+    justify-content: space-between;
+
+}
+nav img{
+    width: 75px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+}
+nav ul{
+    width: 30%;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    align-items: center;
+}
+
+.hero{
+    display: flex;
+ }
+
+.big-text{
+    width: 60%;
+}
+.big-text h1{
+    margin: 0;
+    padding: 0;
+    font-size: 5vw;
+    font-family: futura;
+    text-transform: uppercase;
+    line-height:4.2vw ;
+}
+.big-text p{
+    font-weight: 700;
+    margin-right: 200px;
+    font-size: 1.2rem;
+}
+.collab{
+    background-color: black;
+    font-family: futura;
+    margin-top: 50px;
+    color:white;
+    padding: 15px 40px;
+}
+.collab:hover{
+    background-color: yellow;
+    font-family: futura;
+    margin-top: 50px;
+    color:black;
+    padding: 15px 40px;
+    transform: translateY(2);
+}
+
+
+.hero img{
+    margin: 0;
+    width: 100%;
+}
+.features{
+    padding-top: 100px;
+}
+.features h1{
+    font-family: futura;
+    font-size: 4vw;
+} */
